@@ -1,18 +1,43 @@
-# Smart Rasoi — High-Fidelity Android XML Prototype
+# SmartRasoi - Data Driven Android Application
 
-## Design Map (Layout Mapping Document)
+SmartRasoi is a modular, data-driven Android application designed to help users discover and filter recipes. This project demonstrates modern Android development practices, including Activity-Fragment navigation, data communication via Intents and Bundles, and dynamic list presentation using RecyclerView.
 
-**Roll No:** 21F-9432,21F-9659 | **Project:** Smart Rasoi (AI Kitchen Companion)
+## 🚀 Objective
+Develop an application where information flows seamlessly between components while maintaining a clean, decoupled architecture.
 
-| Requirement ID | Screen Filename | Function in My App |
+## ✨ Key Features
+- **F1: Intent Navigation**: Smooth transition from the Onboarding/Splash screen to the Main Dashboard with data persistence.
+- **F2: Bundle Data Transfer**: Secure transfer of custom `Recipe` objects from the list view to the detail screen.
+- **F3: Vertical RecyclerView**: Dynamic display of recipes using personalizable row layouts, ViewHolders, and high-performance Adapters.
+- **F4: Fragment Coordination**: A single-activity architecture where screens are swapped as fragments without activity restarts.
+- **F5: Dynamic Search & Filter**: Real-time filtering system that narrows down recipes as the user types in the search bar.
+
+## 🏗 Project Architecture
+The project follows **Clean Architecture** principles with a strict separation of concerns across the following packages:
+- `activities/`: Contians navigation coordinators (e.g., `MainActivity`, `OnboardingActivity`).
+- `fragments/`: Houses primary UI content and logic.
+- `adapters/`: Manages data-to-view binding for RecyclerViews.
+- `models/`: Defines the data schema (e.g., `Recipe.kt`).
+
+## 🛠 Tech Stack
+- **Language**: Kotlin
+- **UI Components**: Material Design, ConstraintLayout, CoordinatorLayout.
+- **Navigation**: SupportFragmentManager & FragmentTransactions.
+- **Data Persistence**: Parcelable/Serializable communication via Intents and Bundles.
+
+## 📝 Assignment Requirements & Mapping
+Detailed implementation logic can be found in the `logic_map_doc.md`.
+
+| ID | Component | Requirement Description |
 |---|---|---|
-| L1 (CoordinatorLayout) | `activity_main.xml` | The main dashboard. The hero banner with greeting "Good Evening, Chef!" and tagline collapses when scrolling the recipe carousel, category grid, and tag cloud content below. |
-| L2 (ConstraintLayout) | `layout_recipe_detail_card.xml` | The recipe detail header card. I use a Guideline at 30% to split image and text, a Barrier to prevent the prep-time/servings row from overlapping the variable-length recipe description, and a Chain (spread) to distribute Rating, Prep Time, and Servings evenly. |
-| L3 (LinearLayout Weighted) | `layout_bottom_nav.xml` | Bottom navigation bar with 5 tabs: Home, Search, Meal Plan, Cook, Profile. Each tab uses `layout_weight="1"` to ensure equal width distribution. |
-| L4 (RelativeLayout) | `activity_settings.xml` | The settings preference rows (Notifications, Language, Dark Mode, Meal Times). Each row uses `layout_toRightOf` (title next to icon), `layout_below` (description under title), and `layout_alignParentEnd` (toggle switch at the end). |
-| L5 (FrameLayout) | `layout_notification_bell.xml` | The notification hub in the toolbar. A bell icon with a red circular badge showing "3" stacked on top using `layout_gravity="top\|end"`. |
-| L6 (GridLayout) | `layout_category_grid.xml` | Grid of meal categories (Breakfast, Lunch, Dinner, Snacks, Iftar Special). The "Quick Meals" card spans 2 columns at the bottom using `layout_columnSpan="2"`. |
-| L7 (TableLayout) | `layout_meal_plan_table.xml` | The 7-day meal plan schedule showing Day, Lunch, and Dinner columns (Monday–Sunday). Uses `stretchColumns="1,2"` to make the Lunch and Dinner columns expand to fill the screen width. |
-| L8 (HorizontalScrollView) | `layout_recipe_carousel.xml` | The "Recipe of the Day" carousel. 5 recipe cards (Biryani, Aloo Paratha, Daal Chawal, Haleem, Chana Chaat) scroll left-to-right, independent of the main vertical scroll. |
-| L9 (RadioGroup) | `layout_filter_group.xml` | Meal preference filter with 5 options: All, Vegetarian, Mixed, Quick, Balanced. Only one can be selected at a time. Used on the home screen and meal plan screen. |
-| L10 (ConstraintLayout Flow) | `layout_tag_cloud.xml` | A tag cloud of 12 recipe categories (Quick, Budget, Vegetarian, Iftar, Spicy, Desi, Healthy, Breakfast, Comfort Food, Party, Street Food, Low Cal). Uses the Flow helper widget to auto-wrap chips to the next line. |
+| **F1** | Intent | Navigate from Onboarding to Dashboard with data. |
+| **F2** | Bundle | Transfer a custom object from RecyclerView to Detail Fragment. |
+| **F3** | RecyclerView | Display a vertical list with custom row layout. |
+| **F4** | Fragments | Switch between 2+ fragments without restarting activity. |
+| **F5** | Search/Filter | Real-time RecyclerView filtering. |
+
+## 📦 How to Run
+1. Open the project in **Android Studio**.
+2. Sync Project with Gradle Files.
+3. Build and Run on an Emulator or Physical Device (API 24+).
+4. Start from the **OnboardingActivity** to experience the full data flow.
