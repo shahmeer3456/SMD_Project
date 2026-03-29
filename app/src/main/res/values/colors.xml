@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors - Warm Saffron/Orange Theme -->
+    <color name="colorPrimary">#FF6F00</color>
+    <color name="colorPrimaryDark">#E65100</color>
+    <color name="colorPrimaryLight">#FFB74D</color>
+    <color name="colorAccent">#FF9800</color>
+
+    <!-- Secondary Colors - Deep Green (Herb Inspired) -->
+    <color name="colorSecondary">#2E7D32</color>
+    <color name="colorSecondaryDark">#1B5E20</color>
+    <color name="colorSecondaryLight">#66BB6A</color>
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#FFF8F0</color>
+    <color name="colorBackgroundCard">#FFFFFF</color>
+    <color name="colorBackgroundDark">#1A1A2E</color>
+    <color name="colorBackgroundTinted">#FFF3E0</color>
+
+    <!-- Text Colors -->
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorTextHint">#BDBDBD</color>
+    <color name="colorTextOnPrimary">#FFFFFF</color>
+    <color name="colorTextOnDark">#F5F5F5</color>
+    <color name="colorTextAccent">#FF6F00</color>
+
+    <!-- UI Element Colors -->
+    <color name="colorDivider">#E0E0E0</color>
+    <color name="colorBorder">#E8E8E8</color>
+    <color name="colorShadow">#1A000000</color>
+    <color name="colorOverlay">#80000000</color>
+    <color name="colorBadgeRed">#F44336</color>
+    <color name="colorBadgeRedDark">#D32F2F</color>
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorWarning">#FFC107</color>
+    <color name="colorInfo">#2196F3</color>
+
+    <!-- Category Colors -->
+    <color name="colorBreakfast">#FF8A65</color>
+    <color name="colorLunch">#FFB74D</color>
+    <color name="colorDinner">#EF5350</color>
+    <color name="colorSnack">#AB47BC</color>
+    <color name="colorIftar">#5C6BC0</color>
+    <color name="colorQuickMeal">#26A69A</color>
+
+    <!-- Gradient Colors -->
+    <color name="colorGradientStart">#FF6F00</color>
+    <color name="colorGradientEnd">#FF9800</color>
+    <color name="colorGradientDarkStart">#1A1A2E</color>
+    <color name="colorGradientDarkEnd">#16213E</color>
+
+    <!-- Chip Colors -->
+    <color name="colorChipBackground">#FFF3E0</color>
+    <color name="colorChipBackgroundSelected">#FF6F00</color>
+    <color name="colorChipText">#E65100</color>
+    <color name="colorChipTextSelected">#FFFFFF</color>
+
+    <!-- Bottom Nav -->
+    <color name="colorBottomNavBg">#FFFFFF</color>
+    <color name="colorBottomNavActive">#FF6F00</color>
+    <color name="colorBottomNavInactive">#9E9E9E</color>
+
+    <!-- Star Rating -->
+    <color name="colorStarFilled">#FFD600</color>
+    <color name="colorStarEmpty">#E0E0E0</color>
+
+    <!-- Table Colors -->
+    <color name="colorTableHeader">#FF6F00</color>
+    <color name="colorTableRowEven">#FFFFFF</color>
+    <color name="colorTableRowOdd">#FFF8F0</color>
+    <color name="colorTableBorder">#FFE0B2</color>
+
+    <!-- Toggle/Switch Colors -->
+    <color name="colorToggleOn">#FF6F00</color>
+    <color name="colorToggleOff">#BDBDBD</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="semiTransparentBlack">#40000000</color>
+    <color name="semiTransparentWhite">#80FFFFFF</color>
+</resources>

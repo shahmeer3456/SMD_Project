@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding Activity -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/spacing_xxl">
+
+        <!-- Logo/Brand Area -->
+        <View
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="@dimen/spacing_huge"
+            android:background="@drawable/ic_breakfast" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:text="@string/onboarding_welcome"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_display"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:text="@string/app_tagline"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/text_subtitle"
+            android:gravity="center" />
+
+        <!-- Language Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxxl"
+            android:text="@string/onboarding_language"
+            style="@style/TextStyle.Title" />
+
+        <!-- L9 - RadioGroup for Language -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                android:background="@drawable/selector_radio_button"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/onboarding_language_english"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_subtitle" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:background="@drawable/selector_radio_button"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/onboarding_language_urdu"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/text_subtitle" />
+        </RadioGroup>
+
+        <!-- Meal Preferences -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxxl"
+            android:text="@string/onboarding_meals"
+            style="@style/TextStyle.Title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:checked="true"
+                android:text="Breakfast"
+                android:textColor="@color/colorChipText"
+                android:textSize="@dimen/text_small" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:background="@drawable/bg_chip_selected"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:checked="true"
+                android:text="Lunch"
+                android:textColor="@color/colorChipTextSelected"
+                android:textSize="@dimen/text_small" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/spacing_sm"
+                android:background="@drawable/bg_chip_selected"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:checked="true"
+                android:text="Dinner"
+                android:textColor="@color/colorChipTextSelected"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <!-- Notification Times -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxxl"
+            android:text="@string/onboarding_notifications"
+            style="@style/TextStyle.Title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/spacing_lg"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Breakfast Reminder" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_body" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_chip" android:padding="@dimen/spacing_sm" android:text="7:00 AM" android:textColor="@color/colorChipText" android:textSize="@dimen/text_small" android:textStyle="bold" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_md" android:layout_marginBottom="@dimen/spacing_md" android:background="@color/colorDivider" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Lunch Reminder" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_body" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_chip" android:padding="@dimen/spacing_sm" android:text="1:00 PM" android:textColor="@color/colorChipText" android:textSize="@dimen/text_small" android:textStyle="bold" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_md" android:layout_marginBottom="@dimen/spacing_md" android:background="@color/colorDivider" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Dinner Reminder" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_body" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/bg_chip" android:padding="@dimen/spacing_sm" android:text="8:00 PM" android:textColor="@color/colorChipText" android:textSize="@dimen/text_small" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <!-- Get Started Button -->
+    <TextView
+        android:id="@+id/btnGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xxxl"
+        android:layout_marginBottom="@dimen/spacing_huge"
+        style="@style/ButtonStyle.Primary"
+        android:text="@string/onboarding_get_started" />
+
+    </LinearLayout>
+</ScrollView>

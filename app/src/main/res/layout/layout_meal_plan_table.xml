@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ====================================================================
+     L7 - TableLayout
+     7-Day Meal Plan Schedule Table.
+     Uses stretchColumns="1,2" to make Lunch and Dinner columns expand
+     to fill the screen width.
+     ==================================================================== -->
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2"
+    android:shrinkColumns="0"
+    android:padding="@dimen/spacing_sm">
+
+    <!-- Header Row -->
+    <TableRow
+        android:background="@drawable/bg_table_header"
+        android:padding="@dimen/spacing_md">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Day"
+            android:textColor="@color/colorTextOnPrimary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Lunch"
+            android:textColor="@color/colorTextOnPrimary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Dinner"
+            android:textColor="@color/colorTextOnPrimary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <!-- Monday -->
+    <TableRow android:background="@drawable/bg_table_row_even">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="@string/day_monday"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Daal Chawal"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Chicken Karahi"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+    </TableRow>
+
+    <!-- Tuesday -->
+    <TableRow android:background="@drawable/bg_table_row_odd">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="@string/day_tuesday"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Aloo Gosht"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Seekh Kebab"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+    </TableRow>
+
+    <!-- Wednesday -->
+    <TableRow android:background="@drawable/bg_table_row_even">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="@string/day_wednesday"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Biryani"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Palak Paneer"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+    </TableRow>
+
+    <!-- Thursday -->
+    <TableRow android:background="@drawable/bg_table_row_odd">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="@string/day_thursday"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Chana Masala"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Nihari"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+    </TableRow>
+
+    <!-- Friday -->
+    <TableRow android:background="@drawable/bg_table_row_even">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="@string/day_friday"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Haleem"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="BBQ Platter"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+    </TableRow>
+
+    <!-- Saturday -->
+    <TableRow android:background="@drawable/bg_table_row_odd">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="@string/day_saturday"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Mix Sabzi"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Keema Naan"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+    </TableRow>
+
+    <!-- Sunday -->
+    <TableRow android:background="@drawable/bg_table_row_even">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="@string/day_sunday"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Chicken Pulao"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_sm"
+            android:text="Mutton Korma"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_small" />
+    </TableRow>
+
+</TableLayout>

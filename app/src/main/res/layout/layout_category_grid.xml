@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ====================================================================
+     L6 - GridLayout
+     Dashboard Category Grid with 6 cards. "Quick Meals" card spans
+     2 columns using layout_columnSpan="2".
+     ==================================================================== -->
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds"
+    android:padding="@dimen/spacing_sm">
+
+    <!-- Card 1: Breakfast -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/category_card_size"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/spacing_xs"
+        android:background="@drawable/bg_category_card"
+        android:elevation="@dimen/elevation_sm"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_sm">
+
+        <ImageView
+            android:layout_width="@dimen/icon_xl"
+            android:layout_height="@dimen/icon_xl"
+            android:src="@drawable/ic_breakfast"
+            android:contentDescription="Breakfast" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/cat_breakfast"
+            android:textColor="@color/colorBreakfast"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Card 2: Lunch -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/category_card_size"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/spacing_xs"
+        android:background="@drawable/bg_category_card"
+        android:elevation="@dimen/elevation_sm"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_sm">
+
+        <ImageView
+            android:layout_width="@dimen/icon_xl"
+            android:layout_height="@dimen/icon_xl"
+            android:src="@drawable/ic_lunch"
+            android:contentDescription="Lunch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/cat_lunch"
+            android:textColor="@color/colorLunch"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Card 3: Dinner -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/category_card_size"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/spacing_xs"
+        android:background="@drawable/bg_category_card"
+        android:elevation="@dimen/elevation_sm"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_sm">
+
+        <ImageView
+            android:layout_width="@dimen/icon_xl"
+            android:layout_height="@dimen/icon_xl"
+            android:src="@drawable/ic_dinner"
+            android:contentDescription="Dinner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/cat_dinner"
+            android:textColor="@color/colorDinner"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Card 4: Snacks -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/category_card_size"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/spacing_xs"
+        android:background="@drawable/bg_category_card"
+        android:elevation="@dimen/elevation_sm"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_sm">
+
+        <ImageView
+            android:layout_width="@dimen/icon_xl"
+            android:layout_height="@dimen/icon_xl"
+            android:src="@drawable/ic_snack"
+            android:contentDescription="Snacks" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/cat_snacks"
+            android:textColor="@color/colorSnack"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Card 5: Iftar Special -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/category_card_size"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/spacing_xs"
+        android:background="@drawable/bg_category_card"
+        android:elevation="@dimen/elevation_sm"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_sm">
+
+        <ImageView
+            android:layout_width="@dimen/icon_xl"
+            android:layout_height="@dimen/icon_xl"
+            android:src="@drawable/ic_iftar"
+            android:contentDescription="Iftar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/cat_iftar"
+            android:textColor="@color/colorIftar"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Card 6: Quick Meals — SPANS 2 COLUMNS (layout_columnSpan="2") -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/category_card_size"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:layout_margin="@dimen/spacing_xs"
+        android:background="@drawable/bg_card_accent"
+        android:elevation="@dimen/elevation_sm"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_lg">
+
+        <ImageView
+            android:layout_width="@dimen/icon_xxl"
+            android:layout_height="@dimen/icon_xxl"
+            android:src="@drawable/ic_quick_meal"
+            android:contentDescription="Quick Meals" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_lg"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cat_quick_meals"
+                android:textColor="@color/colorQuickMeal"
+                android:textSize="@dimen/text_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xxs"
+                android:text="Ready in under 15 minutes!"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+</GridLayout>

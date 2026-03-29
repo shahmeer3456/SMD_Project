@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Iftar icon: crescent moon + star -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#5C6BC0" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+    <item android:top="10dp" android:bottom="10dp"
+        android:left="12dp" android:right="16dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <item android:top="12dp" android:bottom="12dp"
+        android:left="18dp" android:right="14dp">
+        <shape android:shape="oval">
+            <solid android:color="#5C6BC0" />
+        </shape>
+    </item>
+    <item android:top="12dp" android:bottom="28dp"
+        android:left="30dp" android:right="12dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

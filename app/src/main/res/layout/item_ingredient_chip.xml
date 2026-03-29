@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single ingredient chip -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/chip_height"
+    android:background="@drawable/bg_chip"
+    android:gravity="center"
+    android:paddingStart="@dimen/spacing_md"
+    android:paddingEnd="@dimen/spacing_md"
+    android:text="Ingredient"
+    android:textColor="@color/colorChipText"
+    android:textSize="@dimen/text_small"
+    android:textStyle="bold" />

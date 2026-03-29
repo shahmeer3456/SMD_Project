@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ====================================================================
+     L9 - RadioGroup
+     Filter/Preference Selection Group. Only one item can be checked
+     at a time. Used for meal filters: All, Vegetarian, Mixed, Quick, Balanced
+     ==================================================================== -->
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filterRadioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/spacing_sm">
+
+    <RadioButton
+        android:id="@+id/radioAll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/chip_height"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:background="@drawable/selector_radio_button"
+        android:button="@android:color/transparent"
+        android:checked="true"
+        android:gravity="center"
+        android:paddingStart="@dimen/spacing_lg"
+        android:paddingEnd="@dimen/spacing_lg"
+        android:text="@string/filter_all"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:id="@+id/radioVegetarian"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/chip_height"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:background="@drawable/selector_radio_button"
+        android:button="@android:color/transparent"
+        android:gravity="center"
+        android:paddingStart="@dimen/spacing_lg"
+        android:paddingEnd="@dimen/spacing_lg"
+        android:text="@string/filter_vegetarian"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_small" />
+
+    <RadioButton
+        android:id="@+id/radioMixed"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/chip_height"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:background="@drawable/selector_radio_button"
+        android:button="@android:color/transparent"
+        android:gravity="center"
+        android:paddingStart="@dimen/spacing_lg"
+        android:paddingEnd="@dimen/spacing_lg"
+        android:text="@string/filter_mixed"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_small" />
+
+    <RadioButton
+        android:id="@+id/radioQuick"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/chip_height"
+        android:layout_marginEnd="@dimen/spacing_sm"
+        android:background="@drawable/selector_radio_button"
+        android:button="@android:color/transparent"
+        android:gravity="center"
+        android:paddingStart="@dimen/spacing_lg"
+        android:paddingEnd="@dimen/spacing_lg"
+        android:text="@string/filter_quick"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_small" />
+
+    <RadioButton
+        android:id="@+id/radioBalanced"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/chip_height"
+        android:background="@drawable/selector_radio_button"
+        android:button="@android:color/transparent"
+        android:gravity="center"
+        android:paddingStart="@dimen/spacing_lg"
+        android:paddingEnd="@dimen/spacing_lg"
+        android:text="@string/filter_balanced"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_small" />
+
+</RadioGroup>

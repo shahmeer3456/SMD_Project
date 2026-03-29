@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ====================================================================
+     L2 - ConstraintLayout with Guidelines, Barrier, and Chain
+     Recipe Detail Header Card. Uses:
+     - Guidelines to split image area and text area
+     - Barrier on variable-length title text
+     - Chain to distribute rating, time, servings evenly
+     ==================================================================== -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:padding="@dimen/spacing_lg"
+    android:elevation="@dimen/elevation_md">
+
+    <!-- Guideline: 35% from start for icon area -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <!-- Guideline: Horizontal at 60% for stats section -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <!-- Recipe Image Placeholder (Left of vertical guideline) -->
+    <View
+        android:id="@+id/recipeImage"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_recipe_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Recipe Title (Right of guideline) -->
+    <TextView
+        android:id="@+id/recipeTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_md"
+        android:text="@string/recipe_biryani_title"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/text_headline"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Recipe Description (variable text) -->
+    <TextView
+        android:id="@+id/recipeDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_md"
+        android:layout_marginTop="@dimen/spacing_xs"
+        android:text="@string/recipe_biryani_desc"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="@dimen/text_small"
+        android:maxLines="3"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/guidelineVertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipeTitle" />
+
+    <!-- Barrier: Prevents stats from overlapping variable title/desc text -->
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="recipeImage,recipeDescription" />
+
+    <!-- Divider line above stats -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:background="@color/colorDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrierBottom" />
+
+    <!-- Chain: Rating, Prep Time, Servings distributed evenly (spread) -->
+    <!-- Rating -->
+    <LinearLayout
+        android:id="@+id/statRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/statPrepTime"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintHorizontal_chainStyle="spread">
+
+        <ImageView
+            android:layout_width="@dimen/icon_md"
+            android:layout_height="@dimen/icon_md"
+            android:src="@drawable/ic_star" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxs"
+            android:text="@string/rating_text"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/text_caption" />
+    </LinearLayout>
+
+    <!-- Prep Time -->
+    <LinearLayout
+        android:id="@+id/statPrepTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/statRating"
+        app:layout_constraintEnd_toStartOf="@id/statServings"
+        app:layout_constraintTop_toTopOf="@id/statRating">
+
+        <ImageView
+            android:layout_width="@dimen/icon_md"
+            android:layout_height="@dimen/icon_md"
+            android:src="@drawable/ic_timer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxs"
+            android:text="@string/recipe_biryani_prep"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recipe_prep_time"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/text_caption" />
+    </LinearLayout>
+
+    <!-- Servings -->
+    <LinearLayout
+        android:id="@+id/statServings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/statPrepTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/statRating">
+
+        <ImageView
+            android:layout_width="@dimen/icon_md"
+            android:layout_height="@dimen/icon_md"
+            android:src="@drawable/ic_serving" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxs"
+            android:text="@string/recipe_biryani_servings"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_body"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recipe_servings"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/text_caption" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Lunch icon: plate-like circle -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFB74D" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+    <item android:top="8dp" android:bottom="8dp"
+        android:left="8dp" android:right="8dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <item android:top="14dp" android:bottom="14dp"
+        android:left="14dp" android:right="14dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFB74D" />
+        </shape>
+    </item>
+</layer-list>

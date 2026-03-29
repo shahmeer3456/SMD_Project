@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Recipe card item for lists -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:elevation="@dimen/elevation_sm"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_md">
+
+    <ImageView
+        android:id="@+id/imgRecipe"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_recipe_placeholder" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/spacing_md"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textRecipeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recipe_biryani_title"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_subtitle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRecipeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/recipe_biryani_desc"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/text_small"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/spacing_xs">
+
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_timer" />
+            <TextView android:id="@+id/textRecipeTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_xs" android:text="45 min" android:textColor="@color/colorTextSecondary" android:textSize="@dimen/text_caption" />
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:layout_marginStart="@dimen/spacing_md" android:src="@drawable/ic_star" />
+            <TextView android:id="@+id/textRecipeRating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_xs" android:text="4.8" android:textColor="@color/colorTextSecondary" android:textSize="@dimen/text_caption" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient_header"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/spacing_xl">
+        <ImageView android:layout_width="@dimen/icon_md" android:layout_height="@dimen/icon_md" android:src="@drawable/ic_back_arrow" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_lg" android:text="@string/settings_title" android:textColor="@color/colorTextOnPrimary" android:textSize="@dimen/text_headline" android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/spacing_lg">
+
+            <!-- Profile -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_card" android:padding="@dimen/spacing_lg" android:orientation="horizontal" android:gravity="center_vertical" android:elevation="@dimen/elevation_sm">
+                <View android:layout_width="@dimen/avatar_size_sm" android:layout_height="@dimen/avatar_size_sm" android:background="@drawable/ic_avatar" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/spacing_md" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_name" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Guest Mode" android:textColor="@color/colorTextSecondary" android:textSize="@dimen/text_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xxl" android:text="PREFERENCES" style="@style/TextStyle.Label" />
+
+            <!-- L4 Row 1: Notifications -->
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_card" android:padding="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_sm" android:elevation="@dimen/elevation_sm">
+                <ImageView android:id="@+id/iconNotif" android:layout_width="@dimen/icon_lg" android:layout_height="@dimen/icon_lg" android:layout_alignParentStart="true" android:layout_centerVertical="true" android:src="@drawable/ic_notification_toggle" />
+                <TextView android:id="@+id/titleNotif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconNotif" android:layout_marginStart="@dimen/spacing_lg" android:text="@string/settings_notifications" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconNotif" android:layout_below="@id/titleNotif" android:layout_marginStart="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_xxs" android:text="@string/settings_notifications_desc" android:textColor="@color/colorTextSecondary" android:textSize="@dimen/text_small" />
+                <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:checked="true" android:thumbTint="@color/colorPrimary" android:trackTint="@color/colorPrimaryLight" />
+            </RelativeLayout>
+
+            <!-- L4 Row 2: Language -->
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_card" android:padding="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_sm" android:elevation="@dimen/elevation_sm">
+                <ImageView android:id="@+id/iconLang" android:layout_width="@dimen/icon_lg" android:layout_height="@dimen/icon_lg" android:layout_alignParentStart="true" android:layout_centerVertical="true" android:src="@drawable/ic_language" />
+                <TextView android:id="@+id/titleLang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconLang" android:layout_marginStart="@dimen/spacing_lg" android:text="@string/settings_language" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconLang" android:layout_below="@id/titleLang" android:layout_marginStart="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_xxs" android:text="@string/settings_language_desc" android:textColor="@color/colorTextSecondary" android:textSize="@dimen/text_small" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:text="→" android:textSize="20sp" android:textColor="@color/colorTextHint" />
+            </RelativeLayout>
+
+            <!-- L4 Row 3: Dark Mode -->
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_card" android:padding="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_sm" android:elevation="@dimen/elevation_sm">
+                <ImageView android:id="@+id/iconDark" android:layout_width="@dimen/icon_lg" android:layout_height="@dimen/icon_lg" android:layout_alignParentStart="true" android:layout_centerVertical="true" android:src="@drawable/ic_dark_mode" />
+                <TextView android:id="@+id/titleDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconDark" android:layout_marginStart="@dimen/spacing_lg" android:text="@string/settings_dark_mode" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconDark" android:layout_below="@id/titleDark" android:layout_marginStart="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_xxs" android:text="@string/settings_dark_mode_desc" android:textColor="@color/colorTextSecondary" android:textSize="@dimen/text_small" />
+                <Switch android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:checked="false" android:thumbTint="@color/colorPrimary" android:trackTint="@color/colorPrimaryLight" />
+            </RelativeLayout>
+
+            <!-- L4 Row 4: Meal Times -->
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_card" android:padding="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_sm" android:elevation="@dimen/elevation_sm">
+                <ImageView android:id="@+id/iconMeal" android:layout_width="@dimen/icon_lg" android:layout_height="@dimen/icon_lg" android:layout_alignParentStart="true" android:layout_centerVertical="true" android:src="@drawable/ic_timer" />
+                <TextView android:id="@+id/titleMeal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconMeal" android:layout_marginStart="@dimen/spacing_lg" android:text="@string/settings_meal_times" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconMeal" android:layout_below="@id/titleMeal" android:layout_marginStart="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_xxs" android:text="@string/settings_meal_times_desc" android:textColor="@color/colorTextSecondary" android:textSize="@dimen/text_small" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:text="→" android:textSize="20sp" android:textColor="@color/colorTextHint" />
+            </RelativeLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xxl" android:text="ABOUT" style="@style/TextStyle.Label" />
+
+            <!-- About -->
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_card" android:padding="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_sm" android:layout_marginBottom="@dimen/spacing_xxxl" android:elevation="@dimen/elevation_sm">
+                <ImageView android:id="@+id/iconAbout" android:layout_width="@dimen/icon_lg" android:layout_height="@dimen/icon_lg" android:layout_alignParentStart="true" android:layout_centerVertical="true" android:src="@drawable/ic_settings" />
+                <TextView android:id="@+id/titleAbout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconAbout" android:layout_marginStart="@dimen/spacing_lg" android:text="@string/settings_about" android:textColor="@color/colorTextPrimary" android:textSize="@dimen/text_subtitle" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iconAbout" android:layout_below="@id/titleAbout" android:layout_marginStart="@dimen/spacing_lg" android:layout_marginTop="@dimen/spacing_xxs" android:text="@string/settings_about_desc" android:textColor="@color/colorTextSecondary" android:textSize="@dimen/text_small" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:text="→" android:textSize="20sp" android:textColor="@color/colorTextHint" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

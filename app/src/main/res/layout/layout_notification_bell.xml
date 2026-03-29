@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ====================================================================
+     L5 - FrameLayout
+     Notification Hub: Bell icon with red circular badge stacked on top
+     using layout_gravity="top|end"
+     ==================================================================== -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_sm">
+
+    <!-- Bell Icon -->
+    <ImageView
+        android:id="@+id/bellIcon"
+        android:layout_width="@dimen/icon_lg"
+        android:layout_height="@dimen/icon_lg"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_bell"
+        android:contentDescription="Notification Bell" />
+
+    <!-- Red Badge stacked on top-right -->
+    <TextView
+        android:id="@+id/notificationBadge"
+        android:layout_width="@dimen/badge_size"
+        android:layout_height="@dimen/badge_size"
+        android:layout_gravity="top|end"
+        android:background="@drawable/bg_badge"
+        android:gravity="center"
+        android:text="@string/notification_count"
+        android:textColor="@color/colorTextOnPrimary"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

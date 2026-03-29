@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher icon foreground: a cooking pot/spoon shape -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Spoon shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,30 C54,30 45,38 45,48 C45,53 49,57 54,57 C59,57 63,53 63,48 C63,38 54,30 54,30Z" />
+    <!-- Handle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,57 L56,57 L56,78 L52,78 Z" />
+    <!-- Steam lines -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M48,28 C48,24 50,22 48,18" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M54,26 C54,22 56,20 54,16" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M60,28 C60,24 62,22 60,18" />
+</vector>

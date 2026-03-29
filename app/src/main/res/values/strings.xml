@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart Rasoi</string>
+    <string name="app_tagline">Your AI Kitchen Companion</string>
+    <string name="app_subtitle">Decide. Cook. Enjoy.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_meal_plan">Meal Plan</string>
+    <string name="nav_cook">Cook</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Welcome to Smart Rasoi!</string>
+    <string name="onboarding_language">Choose Your Language</string>
+    <string name="onboarding_language_english">English</string>
+    <string name="onboarding_language_urdu">اردو</string>
+    <string name="onboarding_meals">Set Your Meal Preferences</string>
+    <string name="onboarding_notifications">Notification Times</string>
+    <string name="onboarding_get_started">Get Started</string>
+
+    <!-- Home Screen -->
+    <string name="home_greeting">Good Evening, Chef!</string>
+    <string name="home_recipe_of_day">Recipe of the Day</string>
+    <string name="home_trending">Trending Now</string>
+    <string name="home_categories">Categories</string>
+    <string name="home_quick_ideas">Quick Meal Ideas</string>
+    <string name="home_what_to_cook">What Can I Cook?</string>
+
+    <!-- Categories -->
+    <string name="cat_breakfast">Breakfast</string>
+    <string name="cat_lunch">Lunch</string>
+    <string name="cat_dinner">Dinner</string>
+    <string name="cat_snacks">Snacks</string>
+    <string name="cat_iftar">Iftar Special</string>
+    <string name="cat_quick_meals">Quick Meals</string>
+
+    <!-- Recipe Detail -->
+    <string name="recipe_prep_time">Prep Time</string>
+    <string name="recipe_cook_time">Cook Time</string>
+    <string name="recipe_servings">Servings</string>
+    <string name="recipe_ingredients">Ingredients</string>
+    <string name="recipe_instructions">Instructions</string>
+    <string name="recipe_tags">Tags</string>
+
+    <!-- Dummy Recipe Data -->
+    <string name="recipe_biryani_title">Chicken Biryani</string>
+    <string name="recipe_biryani_desc">Aromatic basmati rice layered with tender spiced chicken, saffron, and caramelized onions. A timeless classic!</string>
+    <string name="recipe_biryani_prep">20 min</string>
+    <string name="recipe_biryani_cook">45 min</string>
+    <string name="recipe_biryani_servings">4</string>
+
+    <string name="recipe_nihari_title">Nihari</string>
+    <string name="recipe_nihari_desc">Slow-cooked beef stew in rich aromatic spices. Perfect for Sunday brunch with fresh naan.</string>
+
+    <string name="recipe_haleem_title">Haleem</string>
+    <string name="recipe_haleem_desc">A hearty blend of wheat, lentils, and perfectly spiced meat. Topped with crispy fried onions.</string>
+
+    <string name="recipe_paratha_title">Aloo Paratha</string>
+    <string name="recipe_paratha_desc">Golden, flaky flatbread stuffed with spiced mashed potatoes. Served with yogurt and chutney.</string>
+
+    <string name="recipe_daal_title">Daal Chawal</string>
+    <string name="recipe_daal_desc">Comforting yellow lentils tempered with cumin and garlic, served over steamed basmati rice.</string>
+
+    <string name="recipe_kebab_title">Seekh Kebab</string>
+    <string name="recipe_kebab_desc">Juicy minced meat kebabs infused with fresh herbs and grilled to smoky perfection.</string>
+
+    <string name="recipe_kheer_title">Rice Kheer</string>
+    <string name="recipe_kheer_desc">Creamy cardamom-infused rice pudding topped with pistachios and almonds. A royal dessert.</string>
+
+    <string name="recipe_chana_title">Chana Chaat</string>
+    <string name="recipe_chana_desc">Tangy chickpea salad with tomatoes, onions, green chutney, and a squeeze of lemon.</string>
+
+    <!-- Meal Plan -->
+    <string name="meal_plan_title">7-Day Meal Plan</string>
+    <string name="meal_plan_subtitle">Your balanced weekly meal schedule</string>
+    <string name="meal_plan_generate">Generate New Plan</string>
+    <string name="meal_plan_regenerate">Regenerate</string>
+
+    <!-- Days -->
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="day_sunday">Sunday</string>
+
+    <!-- What Can I Cook -->
+    <string name="cook_title">What Can I Cook?</string>
+    <string name="cook_subtitle">Find recipes based on what you have</string>
+    <string name="cook_ingredients_hint">Enter ingredients (e.g., chicken, rice, onion)</string>
+    <string name="cook_search_btn">Find Recipes</string>
+    <string name="cook_by_ingredients">Using Ingredients I Have</string>
+    <string name="cook_by_recent">Based on Recent Meals</string>
+    <string name="cook_match_label">Match</string>
+
+    <!-- Filter Labels -->
+    <string name="filter_all">All</string>
+    <string name="filter_vegetarian">Vegetarian</string>
+    <string name="filter_mixed">Mixed</string>
+    <string name="filter_quick">Quick</string>
+    <string name="filter_balanced">Balanced</string>
+
+    <!-- Tags -->
+    <string name="tag_quick">Quick</string>
+    <string name="tag_budget">Budget</string>
+    <string name="tag_vegetarian">Vegetarian</string>
+    <string name="tag_iftar">Iftar</string>
+    <string name="tag_spicy">Spicy</string>
+    <string name="tag_desi">Desi</string>
+    <string name="tag_healthy">Healthy</string>
+    <string name="tag_breakfast">Breakfast</string>
+    <string name="tag_comfort_food">Comfort Food</string>
+    <string name="tag_party">Party</string>
+    <string name="tag_street_food">Street Food</string>
+    <string name="tag_low_cal">Low Cal</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notifications_desc">Receive recipe reminders before meals</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_desc">Currently set to English</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_dark_mode_desc">Switch to dark theme</string>
+    <string name="settings_meal_times">Meal Reminder Times</string>
+    <string name="settings_meal_times_desc">Breakfast 7:00 AM · Lunch 1:00 PM · Dinner 8:00 PM</string>
+    <string name="settings_clear_cache">Clear Cache</string>
+    <string name="settings_clear_cache_desc">Free up storage space</string>
+    <string name="settings_about">About Smart Rasoi</string>
+    <string name="settings_about_desc">Version 1.0.0</string>
+
+    <!-- Profile -->
+    <string name="profile_name">Ahmed Khan</string>
+    <string name="profile_bio">Home Chef · Karachi · Cooking since 2019</string>
+    <string name="profile_recipes_saved">24 Recipes Saved</string>
+    <string name="profile_meals_planned">12 Meals Planned</string>
+
+    <!-- Misc -->
+    <string name="rating_text">4.8</string>
+    <string name="notification_count">3</string>
+    <string name="see_all">See All</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="back">Back</string>
+</resources>

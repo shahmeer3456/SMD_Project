@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Snack icon: circle with small circles -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#AB47BC" />
+            <size android:width="48dp" android:height="48dp" />
+        </shape>
+    </item>
+    <item android:top="10dp" android:bottom="22dp"
+        android:left="14dp" android:right="22dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <item android:top="10dp" android:bottom="22dp"
+        android:left="22dp" android:right="14dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+    <item android:top="22dp" android:bottom="10dp"
+        android:left="18dp" android:right="18dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+</layer-list>
